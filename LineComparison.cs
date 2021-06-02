@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LineComparison
 {
@@ -11,9 +9,7 @@ namespace LineComparison
             Console.WriteLine("<------Welcome to Line Comparison Program------>");
             Console.WriteLine("------------------------------------------------");
             //Variables
-            int x1, y1, x2, y2, x3, y3, x4, y4; 
-
-            //LineComparison line = new LineComparison();
+            int x1, y1, x2, y2, x3, y3, x4, y4;
 
             // User inputs the coordinates
             Console.WriteLine("Enter 1st co-ordinate of x-axis of First Line : ");
@@ -42,11 +38,15 @@ namespace LineComparison
             String str1 = Convert.ToString(length1);
             double length2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));
             String str2 = Convert.ToString(length2);
+            
             // Prints length of 2 line segment
             Console.WriteLine("Length of a First Line Segment = " + length1);
             Console.WriteLine("Length of a Second Line Segment = " + length2);
-            // Using equals method to check equality of 2 lengths
-            Console.WriteLine(str1.Equals(str2));
+
+            // Using CompareTo method to compare 2 lengths
+            Console.WriteLine(str1.CompareTo(str2)); // Prints 0;(because str1=str2)
+            Console.WriteLine(str1.CompareTo(str2)); // Prints 1;(because str1>str2)
+            Console.WriteLine(str2.CompareTo(str1)); // Prints -1;(because str1<str2)
         }
     }
 }
