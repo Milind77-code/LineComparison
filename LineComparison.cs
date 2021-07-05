@@ -14,6 +14,7 @@ namespace LineComparison
             int x1, y1, x2, y2;
 
             //LineComparison line = new LineComparison();
+            
 
             // User inputs the coordinates
             Console.WriteLine("Enter 1st co-ordinate of x-axis of First Line : ");
