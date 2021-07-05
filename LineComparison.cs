@@ -43,6 +43,7 @@ namespace LineComparison
             // Prints length of 2 line segment
             Console.WriteLine("Length of a First Line Segment = " + length1);
             Console.WriteLine("Length of a Second Line Segment = " + length2);
+           
             // Using equals method to check equality of 2 lengths
             Console.WriteLine(str1.Equals(str2));
         }
