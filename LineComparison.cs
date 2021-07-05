@@ -20,7 +20,6 @@ namespace LineComparison
 		/// <returns></returns>
 		public double lengthOfLine(String line, int x1, int y1, int x2, int y2)
 		{
-
 			Console.WriteLine("------------------------------------------------");
 			double length = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
 			Console.WriteLine("End Points of Line Segments are = " + "(" + x1 + "," + y1 + ")" + "(" + x2 + "," + y2 + ")");
