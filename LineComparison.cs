@@ -27,6 +27,7 @@ namespace LineComparison
 			Console.WriteLine("Length of " + line + " = " + length);
 			return length;
 		}
+		
 		/// <summary>
 		/// Calling from main method
 		/// </summary>
